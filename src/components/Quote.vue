@@ -40,12 +40,6 @@ export default {
   methods: {
     getQuote() {
       let selfie = this;
-      if (this.docState === "saved") {
-        this.docState == "clicked";
-      } else {
-        this.docState == "saved";
-      }
-
       unirest
         .get(
           "https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=famous&count=1"
